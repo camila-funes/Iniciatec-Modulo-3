@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Dancing+Script&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=DM+Sans&family=Dancing+Script&family=Quicksand&display=swap');
+
+#container{
+  font-family: Quicksand;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+
+}
+
+.hr{
+  background-color: #72bb53;
+  height: 2px !important;
+  opacity: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.pageheader{
+  display: flex;
+  justify-content: center;
+}
+
+#nav {
+  height: 100vh;
+  width: 10vw;
+  padding: 0;
+  top: 30%;
+  line-height: 100%;
+  z-index: 1;
+  background: white;
+  color: black;
+  font-family: Asap;
+  text-align: center;
+}
+
+.img-nav{
+  width: 60px;
+  height: 60px;
+
+}
+
+.form-floating{
+  margin: 10px 0px;
+}
+
+
+.form-control{
+  border: solid 1px #72bb53 !important; 
+}
+
+.btn-primary{
+  background-color:#72bb53 !important;
+  border-color: #72bb53 !important;
+}
+
+.img-home{
+  width: 150px;
+  height: 150px;
+}
+
+.img-offcanvas {
+  width: 150px;
+  height: 150px;
+}
+
+#nav  a, #nav li{
+  list-style-type: none;
+}
+a:link {
+  text-decoration: none;
+  font-size: 1em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.active-nav{
+  background-color: #5cb85c;
+  opacity: 70%;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+#bodycontent{
+  background: white;
+  padding: 1em; 
+  width: 100%;
+}
+
+#bodycontent h1{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#bodycontent ul{
+  list-style-type: square;
+}
+
+#infotable th, #infotable tr{
+  padding: 0 1.0em;
+  padding-top: 1em; 
+  border: solid 1px #72bb53;
+}
+
+
+#infotable td{
+  text-align: left;
+  padding: 0 1.0em;
+  border: solid 1px #72bb53;
+}
+
+#titlecenter{
+  text-align: center;
+}
+
+#upcoming {
+  text-align: center;
+}
+
+iframe{
+  border: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+#infotable h3, #rules h3{
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+#gamelocations td{
+  padding: 2em;
+}
+
+legend{
+  font-weight: bold;
+}
+
+fieldset{
+  margin: 2em 0;
+}
+
+.impinfo{
+  font-weight: bold;
+  font-size:  .95em;
+  padding: 0em;
+}
+
+.note{
+  font-weight: normal;
+  font-size: 1.0em;
+}
+
+.uniformchoice, .contract{
+  font-size: .8em;
+}
+
+.announcement{
+font-style: italic; 
+text-decoration: underline;
+}
+
+fieldset{
+  border:solid 1px green;
+}
+
+form h3{
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.stylized label{
+  width:12em;
+  padding-right: 1em;
+  text-align: right;
+  float: left;  
+}
+
+#offcanvasNavbar{
+  width: 100%;
+}
+
+#signature{
+  border:solid 1px #72bb53;
+  border-radius: 5px;
+}
