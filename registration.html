@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Lee Knowlton" />
+  <meta name="description" content="NYSL Registration" />
+  <meta name="description" content="The NYSL Rules" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NYSL Registration- Northside Youth Soccer League</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="css/nysl_3.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#72bb53" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+          <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+        </svg>
+      </button>
+      <img src="css/images/nysl_logo.png" class="img-nav" alt="">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-center m-auto">
+          <div class="d-flex flex-column text-center my-4">
+            <img class="img-offcanvas" src="css/images/nysl_logo.png" alt="">
+            <h4>Name</h4>
+          </div>
+          <ul class="navbar-nav text-center">
+            <li><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About NYSL</a></li>
+            <li><a class="nav-link active active-nav" href="#">Registration</a></li>
+            <li><a class="nav-link" href="info.html">Game Information</a></li>
+            <li><a class="nav-link" href="rules.html">Rules</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>    
+
+  <div id="bodycontent">
+    <h1>Registration Form</h1>
+
+    <form method="get" action="show_data.html"> 
+      <div>
+        <div class="form-floating">
+          <input type="first_name" class="form-control" id="floatingFirstName" placeholder="first_name">
+          <label for="floatingFirstName">Player's First Name</label>
+        </div>
+        <div class="form-floating">
+          <input type="last_name" class="form-control" id="floatingLastName" placeholder="last_name">
+          <label for="floatingLastName">Last Name</label>
+        </div>
+        <div class="form-floating">
+          <input type="street_address" class="form-control" id="floatingStreet_address" placeholder="street_address">
+          <label for=" floatingStreet_address">Street Address</label>
+        </div>
+        <div class="form-floating">
+          <input type="city" class="form-control" id="floatingCity" placeholder="city">
+          <label for="floatingCity">City</label>
+        </div>
+        <div class="form-floating">
+          <input type="zip" class="form-control" id="floatingZip" placeholder="zip">
+          <label for="floatingZip">Zip Code</label>
+        </div>
+        <div class="d-flex flex-row">
+          <label for="birth_date">Birth Date (mm/dd/yyyy):</label>
+          <input type="date" name="birth_date" id="birth_date"/>
+        </div>
+        <div class="form-floating">
+          <input type="parent_guardian" class="form-control" id="floatingParentGuardian" placeholder="parent_guardian">
+          <label for="floatingParentGuardian">Parent/Guardian Name</label>
+        </div>
+        <div class="form-floating">
+          <input type="contact_phone" class="form-control" id="floatingContactPhone" placeholder="contact_phone">
+          <label for="floatingContactPhone">Contact Phone</label>
+        </div>
+        <div class="form-floating">
+          <input type="contact_email" class="form-control" id="floatingContactEmail" placeholder="contact_email">
+          <label for="floatingContactEmail">Contact Email</label>
+        </div>
+
+        <div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalSchool_1">
+            Gender
+          </button>
+          <div class="modal fade" id="ModalGrender" tabindex="-1" aria-labelledby="ModalGenderLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <input type="radio" name="gender" id="female" value="female"/>
+                  <label for="female">Female</label>
+                  <hr class="hr">
+                  <input type="radio" name="gender" id="male" value="male"/>
+                  <label for="male">Male</label>
+                </div> 
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalGrade">
+            Grade
+          </button>
+          <div class="modal fade" id="ModalGrade" tabindex="-1" aria-labelledby="ModalGradeLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body text-align-left">
+                  <input type="radio" name="grade" id="pre_school" value="pre_school"/>
+                  <label for="pre_school">Pre-School</label>
+                  <hr class="hr">
+                  <input type="radio" name="grade" id="1st" value="1st"/>
+                  <label for="1st">1st</label>
+                  <hr class="hr">
+                  <input type="radio" name="grade" id="2nd" value="2nd"/>
+                  <label for="2nd">2nd</label>
+                  <hr class="hr">
+                  <input type="radio" name="grade" id="3rd" value="3rd"/>
+                  <label for="3rd">3rd</label>
+                  <hr class="hr">
+                  <input type="radio" name="grade" id="4th" value="4th"/>
+                  <label for="4th">4th</label>
+                  <hr class="hr">
+                  <input type="radio" name="grade" id="5th" value="5th"/>
+                  <label for="5th">5th</label>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="hr">
+
+        <div>
+          <legend>Which elementary schools do you live near?</legend>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalSchool_1">
+            First Closest School
+          </button>
+          <div class="modal fade" id="ModalSchool_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <input type="radio" name="school_1" id="katzenmaier" value="katzenmaier">
+                  <label for="katzenmaier">AJ Katzenmaier</label>
+                  <hr class="hr">
+                  <input type="radio" name="school_1" id="greenbay" value="greenbay">
+                  <label for="greenbay">Greenbay</label>
+                  <hr class="hr">
+                  <input type="radio" name="school_1" id="yeager" value="yeager">
+                  <label for="yeager">Howard A Yeager</label>
+                  <hr class="hr">
+                  <input type="radio" name="school_1" id="hart" value="hart">
+                  <label for="hart">Marjorie P Hart</label>
+                  <hr class="hr">
+                  <input type="radio" name="school_1" id="north" value="north">
+                  <label for="north">North Elementary</label>
+                  <hr class="hr">
+                  <input type="radio" name="school_1" id="south" value="south">
+                  <label for="south">South Elementary</label>
+                </div> 
+              </div>
+            </div>
+          </div>
+          <hr class="hr">
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modalschool_2">
+            Second Closest School
+          </button>
+          <div class="modal fade" id="Modalschool_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <input type="radio" name="school_2" id="katzenmaier" value="katzenmaier">
+                  <label for="katzenmaier">AJ Katzenmaier</label>
+                  <hr class="hr">
+                  <input type="radio" name="school_2" id="greenbay" value="greenbay">
+                  <label for="greenbay">Greenbay</label>
+                  <hr class="hr">
+                  <input type="radio" name="school_2" id="yeager" value="yeager">
+                  <label for="yeager">Howard A Yeager</label>
+                  <hr class="hr">
+                  <input type="radio" name="school_2" id="hart" value="hart">
+                  <label for="hart">Marjorie P Hart</label>
+                  <hr class="hr">
+                  <input type="radio" name="school_2" id="north" value="north">
+                  <label for="north">North Elementary</label>
+                  <hr class="hr">
+                  <input type="radio" name="school_2" id="south" value="south">
+                  <label for="south">South Elementary</label>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="hr">
+
+        <div>
+          <legend>What position(s) do you normally play?<span class="note">(check all that apply)</span></legend>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modalposition_normal">
+            Position Normal
+          </button>
+          <div class="modal fade" id="Modalposition_normal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <label for="n_forward">Forward</label>
+                  <input type="checkbox" name="normal_position" id="n_forward" value="n_forward"/>
+                  <hr class="hr">
+                  <label for="n_defense">Defense</label>
+                  <input type="checkbox" name="normal_position" id="n_defense" value="n_defense"/>
+                  <hr class="hr">
+                  <label for="n_midfield">Midfield</label>
+                  <input type="checkbox" name="normal_position" id="n_midfield" value="n_midfield"/>
+                  <hr class="hr">
+                  <label for="n_goalkeeper">Goalkeeper</label>
+                  <input type="checkbox" name="normal_position" id="n_goalkeeper" value="n_goalkeeper"/>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="hr">
+
+        <div>
+          <legend>What position(s) do you want to play? <span class="note">(check all that apply)</span></legend>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modalposition_normal">
+            Position Normal
+          </button>
+          <div class="modal fade" id="Modalposition_normal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <label for="w_forward">Forward</label>
+                  <input type="checkbox" name="want_position" id="w_forward" value="w_forward"/>
+                  <hr class="hr">
+                  <label for="w_defense">Defense</label>
+                  <input type="checkbox" name="want_position" id="w_defense" value="w_defense"/>
+                  <hr class="hr">
+                  <label for="w_midfield">Midfield</label>
+                  <input type="checkbox" name="want_position" id="w_midfield" value="w_midfield"/>
+                  <hr class="hr">
+                  <label for="w_goalkeeper">Goalkeeper</label>
+                  <input type="checkbox" name="want_position" id="w_goalkeeper" value="w_goalkeeper"/>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="hr">
+
+        <div>
+          <label for="uniform" class="impinfo">Already Have a Uniform</label>
+          <input type="checkbox" name="uniform" id="uniform"/>
+        </div>
+
+
+        <div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modaljersey_size">
+            Jersey Size
+          </button>
+          <div class="modal fade" id="Modaljersey_size" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <input type="radio" name="jersey_size" id="j_y_small" value="j_y_small"/>
+                  <label for="j_y_small">Youth Small</label>
+                  <hr class="hr">
+                  <input type="radio" name="jersey_size" id="j_y_medium" value="j_y_medium"/>
+                  <label for="j_y_medium">Youth Medium</label>
+                  <hr class="hr">
+                  <input type="radio" name="jersey_size" id="j_y_large" value="j_y_large"/>
+                  <label for="j_y_large">Youth Large</label>
+                  <hr class="hr">
+                  <input type="radio" name="jersey_size" id="j_small" value="j_small"/>
+                  <label for="j_small">Small</label>
+                  <hr class="hr">
+                  <input type="radio" name="jersey_size" id="j_medium" value="j_medium"/>
+                  <label for="j_medium">Medium</label>
+                  <hr class="hr">
+                  <input type="radio" name="jersey_size" id="j_large" value="j_large"/>
+                  <label for="j_large">Large</label>
+                  <hr class="hr">
+                  <input type="radio" name="jersey_size" id="j_x_large" value="j_x_large"/>
+                  <label for="j_x_large">Extra-Large</label>
+                </div> 
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modalshorts_size">
+            Shorts Size
+          </button>
+          <div class="modal fade" id="Modalshorts_size" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <input type="radio" name="shorts_size" id="s_y_small" value="s_y_small"/>
+                  <label for="s_y_small">Youth Small</label>
+                  <hr class="hr">
+                  <input type="radio" name="shorts_size" id="s_y_medium" value="s_y_medium"/>
+                  <label for="s_y_medium">Youth Medium</label>
+                  <hr class="hr">
+                  <input type="radio" name="shorts_size" id="s_y_large" value="s_y_large"/>
+                  <label for="s_y_large">Youth Large</label>
+                  <hr class="hr">
+                  <input type="radio" name="shorts_size" id="s_small" value="s_small"/>
+                  <label for="s_small">Small</label>
+                  <hr class="hr">
+                  <input type="radio" name="shorts_size" id="s_medium" value="s_medium"/>
+                  <label for="s_medium">Medium</label>
+                  <hr class="hr">
+                  <input type="radio" name="shorts_size" id="s_large" value="s_large"/>
+                  <label for="s_large">Large</label>
+                  <hr class="hr">
+                  <input type="radio" name="shorts_size" id="s_x_large" value="s_x_large"/>
+                  <label for="s_x_large">Extra-Large</label>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <h3>Permission to Play</h3>
+      <div class="contract">
+        <p>
+          I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the "League" accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.       
+        </p>
+        <p>
+          By entering my name below, I hereby agree and authorize the above. In addition, by entering my name below, I also acknowledge that I have read the cancellation policy and agree to its terms.
+        </p>
+        <p>
+          <div class="form-floating">
+            <input type="signature" class="form-control" id="floatingSignature" placeholder="signature">
+            <label for="floatingSignature">Parent/Guardian Signature</label>
+          </div>
+          <div class="d-flex flex-row">
+            <label for="sig_date">Date:</label>
+            <input type="date" name="sig_date" id="sig_date"/>
+          </div>        
+        </p>
+      </div>
+      <p><input type="submit"/></p>
+    </form>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
